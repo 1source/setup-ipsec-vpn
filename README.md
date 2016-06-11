@@ -56,18 +56,18 @@ A dedicated server or KVM/Xen-based Virtual Private Server (VPS), freshly instal
 
 First, update your system with `apt-get update && apt-get dist-upgrade` and reboot. This is optional, but recommended.
 
-**Option 1:** Have the script generate random VPN credentials for you (will be displayed on the screen):
+**Option 1:** Have the script generate random VPN credentials for you (will be displayed when finished):
 
 ```bash
 wget https://git.io/vpnsetup -O vpnsetup.sh && sudo sh vpnsetup.sh
 ```
 
-**Option 2:** Enter your own VPN credentials, or define them as environment variables:
+**Option 2:** Edit the script and provide your own VPN credentials:
 
 ```bash
 wget https://git.io/vpnsetup -O vpnsetup.sh
 nano -w vpnsetup.sh
-[Replace with your own values: VPN_IPSEC_PSK, VPN_USER and VPN_PASSWORD]
+[Replace with your own values: YOUR_IPSEC_PSK, YOUR_USERNAME and YOUR_PASSWORD]
 sudo sh vpnsetup.sh
 ```
 
@@ -75,18 +75,18 @@ sudo sh vpnsetup.sh
 
 First, update your system with `yum update` and reboot. This is optional, but recommended.
 
-**Option 1:** Have the script generate random VPN credentials for you (will be displayed on the screen):
+**Option 1:** Have the script generate random VPN credentials for you (will be displayed when finished):
 
 ```bash
 wget https://git.io/vpnsetup-centos -O vpnsetup_centos.sh && sudo sh vpnsetup_centos.sh
 ```
 
-**Option 2:** Enter your own VPN credentials, or define them as environment variables:
+**Option 2:** Edit the script and provide your own VPN credentials:
 
 ```bash
 wget https://git.io/vpnsetup-centos -O vpnsetup_centos.sh
 nano -w vpnsetup_centos.sh
-[Replace with your own values: VPN_IPSEC_PSK, VPN_USER and VPN_PASSWORD]
+[Replace with your own values: YOUR_IPSEC_PSK, YOUR_USERNAME and YOUR_PASSWORD]
 sudo sh vpnsetup_centos.sh
 ```
 

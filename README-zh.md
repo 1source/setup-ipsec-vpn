@@ -56,18 +56,18 @@
 
 首先，更新你的系统： 运行 `apt-get update && apt-get dist-upgrade` 并重启。这一步是可选的，但推荐。
 
-**选项 1:** 使用脚本随机生成的 VPN 登录凭证 （会在屏幕上显示）：
+**选项 1:** 使用脚本随机生成的 VPN 登录凭证 （完成后会在屏幕上显示）：
 
 ```bash
 wget https://git.io/vpnsetup -O vpnsetup.sh && sudo sh vpnsetup.sh
 ```
 
-**选项 2:** 输入你自己的 VPN 登录凭证，或者将它们定义为环境变量：
+**选项 2:** 编辑脚本并提供你自己的 VPN 登录凭证：
 
 ```bash
 wget https://git.io/vpnsetup -O vpnsetup.sh
 nano -w vpnsetup.sh
-[修改为你自己的值： VPN_IPSEC_PSK, VPN_USER 和 VPN_PASSWORD]
+[替换为你自己的值： YOUR_IPSEC_PSK, YOUR_USERNAME 和 YOUR_PASSWORD]
 sudo sh vpnsetup.sh
 ```
 
@@ -75,18 +75,18 @@ sudo sh vpnsetup.sh
 
 首先，更新你的系统： 运行 `yum update` 并重启。这一步是可选的，但推荐。
 
-**选项 1:** 使用脚本随机生成的 VPN 登录凭证 （会在屏幕上显示）：
+**选项 1:** 使用脚本随机生成的 VPN 登录凭证 （完成后会在屏幕上显示）：
 
 ```bash
 wget https://git.io/vpnsetup-centos -O vpnsetup_centos.sh && sudo sh vpnsetup_centos.sh
 ```
 
-**选项 2:** 输入你自己的 VPN 登录凭证，或者将它们定义为环境变量：
+**选项 2:** 编辑脚本并提供你自己的 VPN 登录凭证：
 
 ```bash
 wget https://git.io/vpnsetup-centos -O vpnsetup_centos.sh
 nano -w vpnsetup_centos.sh
-[修改为你自己的值： VPN_IPSEC_PSK, VPN_USER 和 VPN_PASSWORD]
+[替换为你自己的值： YOUR_IPSEC_PSK, YOUR_USERNAME 和 YOUR_PASSWORD]
 sudo sh vpnsetup_centos.sh
 ```
 
